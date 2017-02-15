@@ -1,0 +1,9 @@
+# Pull base image
+From tomcat8-jre8
+
+
+# Copy to images tomcat path
+ADD webapp-0.0.1-SNAPSHOT-was.war usr/local/tomcat/webapps/
+
+
+CMD ["catalina.sh", "run"]
